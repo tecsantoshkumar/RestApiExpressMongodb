@@ -105,3 +105,7 @@ userModel.find({}, function(err, docs) {
      console.log(docs);
 });
 ```
+9. Start the Express.js server and test the API by sending HTTP requests to the API endpoints.
+```
+node app
+```
