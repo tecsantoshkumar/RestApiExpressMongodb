@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-const url = 'mongodb://127.0.0.1:27017/testgatway';
+const url = 'mongodb://127.0.0.1:27017/user';
 
 /************ Connect to Mongoose *******************/
 mongoose.set('strictQuery', false);
@@ -68,5 +68,6 @@ app.get('/', (req, res) => {
 
 /************* Creat a Server ****************/
 app.listen(PORT, () => {
-    console.log(`http://127.0.0.1:${PORT}/`);
+    console.log('app successfyll:');
+    console.log(`http://127.0.0.1:${PORT}`);
 });
